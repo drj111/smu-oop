@@ -1,5 +1,3 @@
-package Practice;
-
 import java.util.Scanner;
 
 class Practice05 {
@@ -9,6 +7,6 @@ class Practice05 {
         double fah = sc.nextDouble();
         double cel = 5.0/9.0 * (fah-32);
 
-        System.out.println(cel);
+        System.out.printf("%.1f", cel);
     }
 }

@@ -1,5 +1,3 @@
-package Practice;
-
 public class Practice06_07 {
     void main() {
         double[] arr1 = {1.1, 2.3, 4.7, 7.5};
