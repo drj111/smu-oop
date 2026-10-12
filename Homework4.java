@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Homework4 {
-
+    Scanner sc = new Scanner(System.in);
     // 큰 수를 작은 수로 나누었을 때,
     // '큰 수와 작은 수'의 공약수는 '작은 수와 그 나머지' 공약수와 동일합니다.
     // 때문에 두 쌍의 최대 공약수는 같습니다.
@@ -11,6 +11,7 @@ public class Homework4 {
 
 
 
+    //재귀 호출을 통한 구현
     int gcd(int num1, int num2) {
 
         //절댓값 적용
@@ -42,7 +43,6 @@ public class Homework4 {
         if (num2==0) return num1;
         if (num1==num2) return num1;
 
-
         // 나뉨 당하는 수, 나누는 수 설정
         int dividend;
         int divisor;
@@ -66,12 +66,12 @@ public class Homework4 {
 
 
     void main() {
-        Scanner sc = new Scanner(System.in);
-        //gcd()
+
+        //재귀 호출 사용
         System.out.print("두 수를 입력하세요: ");
         System.out.printf("두 수의 최대공약수는 %d 입니다.\n", gcd(sc.nextInt(), sc.nextInt()));
 
-//        //gcdLoop()
+//        //반복문 사용
 //        System.out.print("두 수를 입력하세요: ");
 //        System.out.printf("두 수의 최대공약수는 %d 입니다.\n", gcdLoop(sc.nextInt(), sc.nextInt()));
     }
